@@ -51,6 +51,18 @@ function draw() {
       line(x, y, x + volume * 100, y + volume * 100);
     }
   }
+
+  // aggiungere il testo per le indicazioni
+  var testo = "CLICK TO PLAY OR STOP THE MUSIC";
+
+  textFont("Roboto");
+  textStyle(BOLD);
+  textAlign(CENTER);
+  textSize(40);
+  noFill();
+  stroke("plum");
+  text(testo, width / 2, 765);
+
 }
 
 // al primo click del mouse la canzone inizia e il colore del background cambia; al secondo click la canzone si ferma e il background torna bianco
